@@ -56,3 +56,249 @@ a{
     height: 30px;
     width: 24px;
 }
+/* =========================================================
+   NAVBAR CONTAINER
+========================================================= */
+
+nav {
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: white;
+}
+
+.navcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.2rem 3rem;
+}
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.min {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* =========================================================
+   NAV LINKS
+========================================================= */
+
+.navlist {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    position: relative;
+}
+
+.navlist a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* aligns text + icon */
+
+.navlist a span {
+    margin-right: 0.3rem;
+}
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+nav{
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.navcontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.3rem 3rem;
+}
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.min{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* =========================================================
+   NAV LINKS
+========================================================= */
+
+.navlist{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navlist a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.navlist span{
+    margin-right: .3rem;
+}
+/* =========================================================
+   HOME DROPDOWN PARENT
+========================================================= */
+
+.navlist > div > div{
+    position: relative;
+}
+
+/* =========================================================
+   TOP NAV ITEM
+========================================================= */
+
+.navlist > div > div > a{
+    display: flex;
+    align-items: center;
+}
+
+/* =========================================================
+   BUTTON WRAPPER
+========================================================= */
+
+.bt{
+    position: relative;
+}
+
+/* =========================================================
+   DROPDOWN CARD
+========================================================= */
+
+.dropdown-card{
+
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+
+    width: 210px;
+
+    margin-top: 0;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+    
+
+  
+   padding-top: 50px;
+   padding-bottom: 30px;
+   padding-left: 10px;
+
+    z-index: 100;
+}
+
+/* =========================================================
+   DROPDOWN LINKS
+========================================================= */
+
+.Sub-Nav1{
+
+    display: block;
+
+    padding: 5px;
+
+    text-decoration: none;
+
+    color: black;
+
+    transition: 0.3s;
+
+    cursor: pointer;
+   
+
+   
+}
+
+/* =========================================================
+   REMOVE LAST BORDER
+========================================================= */
+
+.Sub-Nav1:last-child{
+    border-bottom: none;
+}
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.Sub-Nav1:hover{
+   
+    color: orange;
+   
+}
+
+/* =========================================================
+   SPECIAL LINKS
+========================================================= */
+
+.special{
+    font-weight: 600;
+}
+
+/* =========================================================
+   ICONS
+========================================================= */
+
+.navicons{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.navicon{
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.navicon:hover{
+    transform: scale(1.1);
+}
+
+/* =========================================================
+   OVERLAY
+========================================================= */
+
+.overlay{
+
+    position: fixed;
+
+    top: 80px;
+
+    left: 0;
+
+    width: 100%;
+
+    height: calc(100vh - 80px);
+
+    background-color: rgba(0,0,0,0.4);
+
+    z-index: 50;
+
+    pointer-events: none;
+}

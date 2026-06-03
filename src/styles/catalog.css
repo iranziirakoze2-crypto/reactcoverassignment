@@ -1,0 +1,60 @@
+
+.divcat1{
+     transform: translateY(-240px);
+     padding-left: 75px;
+}
+
+.cat1img{
+    height: 23rem;
+    width: 95%;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 15px;
+}
+.divcat2{
+     display: flex;
+    align-items: center;
+    gap: 20px;
+   
+    
+}
+
+.h2cat1{
+    font-size: 30px;
+
+}
+.pcat1{
+    color: black;
+    font-size: 17px;
+}
+
+.cat1icon{
+   
+    font-size: 30px;
+    color: black;
+    
+}
+
+.cat1icon:hover {
+  color: orange;
+}
+
+.catalogcontainer{
+    display: flex;
+ flex-direction: row;
+justify-content: right;
+gap: 25px;
+
+}
+
+.catalogcard{
+    margin-bottom: 70px;
+}
+
+.catalogimage{
+    width: 300px;
+    height: 300px;
+    border-radius: 12px;
+   
+    
+}

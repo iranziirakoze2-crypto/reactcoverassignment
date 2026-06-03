@@ -15,7 +15,7 @@ function Footer(){
 
         <div>
           <h3 className="footerh3">Our story</h3>
-        <p>Miniture is one of the biggest international<br/> fashion companies, one of the world’s<br/> largest distribution groups.</p>
+        <p className="footer1p">Miniture is one of the biggest international<br/> fashion companies, one of the world’s<br/> largest distribution groups.</p>
         
         <div className="footericon">
           <div className="footericons"><SiFacebook/></div>
@@ -27,20 +27,20 @@ function Footer(){
         </div>
         
 
-           <div >
+           <div className="footerdiv">
             <h3 className="footerh3">Quick links</h3>
-            <p>Accent Chairs</p>
-            <p>Dinning Chair</p>
-            <p>Dining Room</p>
-            <p>Kid's Furniture</p>
+            <p className="footer1p">Accent Chairs</p>
+            <p className="footer1p">Dinning Chair</p>
+            <p className="footer1p">Dining Room</p>
+            <p className="footer1p">Kid's Furniture</p>
            </div>
 
             <div>
             <h3 className="footerh3">Information</h3>
-            <p>Privacy policy</p>
-            <p>Refund policy</p>
-            <p>Shipping & Return</p>
-            <p>Term & conditions</p>
+            <p className="footer1p">Privacy policy</p>
+            <p className="footer1p">Refund policy</p>
+            <p className="footer1p">Shipping & Return</p>
+            <p className="footer1p">Term & conditions</p>
            </div>
 
 <div>

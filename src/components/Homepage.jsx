@@ -147,7 +147,9 @@ function Home() {
 
       {/* Deal and Durations Banner */}
       <section className="thirddurations">
-        {third.map((item) => (
+        
+       
+           {third.map((item) => (
           <div className="dealcontainer" key={item.title}>
             <img className="dealimage" src={item.image} alt={item.title} />
             {/* Wrapped texts into a single info block to stop overlapping */}
@@ -157,6 +159,8 @@ function Home() {
             </div>
           </div>
         ))}
+        
+        
 
         {/* Fixed unclosed className quotes below */}
         <div className="durations">

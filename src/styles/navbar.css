@@ -6,7 +6,6 @@ nav{
 }
 .navcontainer{
     display: flex;
-    /* align-items: center; */
     justify-content: space-between;
     padding: 1.5rem;
       position: sticky;
@@ -15,13 +14,14 @@ nav{
 }
 
 .min {
+ 
   font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
-  font-weight: 700;
-  color: #000000;
-  letter-spacing: -0.01em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 24px; /* Added a default size so it matches your image */
+  font-weight: 500;          /* Normal weight */
+  font-size: 35px;           /* Adjust size as needed */
+  text-transform: lowercase; /* Forces lowercase like the image */
+  letter-spacing: 0.05em;    /* Adds subtle spacing between letters */
+  color: #000000;            /* Crisp black text */
+
 }
 
 
@@ -62,7 +62,7 @@ a{
 
 nav {
     width: 100%;
-    border-bottom: 1px solid #e5e5e5;
+   
     background-color: white;
 }
 
@@ -74,16 +74,9 @@ nav {
     padding: 1.2rem 3rem;
 }
 
-/* =========================================================
-   LOGO
-========================================================= */
 
-.min {
-    font-size: 2rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
+
+
 
 /* =========================================================
    NAV LINKS
@@ -116,7 +109,7 @@ nav {
 nav{
     width: 100%;
     background-color: white;
-    border-bottom: 1px solid #e5e5e5;
+   
 }
 
 .navcontainer{
@@ -127,15 +120,8 @@ nav{
     padding: 1.3rem 3rem;
 }
 
-/* =========================================================
-   LOGO
-========================================================= */
 
-.min{
-    font-size: 2rem;
-    font-weight: bold;
-    text-transform: uppercase;
-}
+
 
 /* =========================================================
    NAV LINKS
@@ -301,4 +287,109 @@ nav{
     z-index: 50;
 
     pointer-events: none;
+}
+
+
+.sub-dropdown1{
+
+  display: flex;
+  flex-direction: row;
+    position: absolute;
+
+    gap: 50px;
+  
+    top: 100%;
+    left: 0;
+
+    width: 100rem;
+    height: 30rem;
+
+    margin-top: 2px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+    
+
+  
+   padding-top: 50px;
+   padding-bottom: 30px;
+   padding-left: 10px;
+
+    z-index: 100;
+    transform: translateX(-650px);
+}
+.sub-dropdown-content1{
+    margin-top: 30px;
+    padding-left: 5px;
+     transform: translateY(-30px)
+}
+.subzgans{
+    display: flex;
+}
+.dropdown-cardcat{
+    display: flex;
+    position: absolute;
+
+}
+
+.navcatimg{
+width: 280px;
+height: 230px;
+border-radius: 15px;
+}
+.Contents{
+    display: flex;
+    flex-direction: column;
+}
+
+.Sub-Nav2{
+   
+
+    display: flex;
+    flex-direction: row;
+    display: block;
+
+  padding: 10px;
+
+    text-decoration: none;
+
+    color: black;
+
+    transition: 0.3s;
+
+    cursor: pointer;
+
+
+   
+
+   
+}
+
+.navitemsbar{
+    padding-left: 25px;
+    padding-bottom: 20px;
+    border-bottom:1px solid black;
+   
+
+}
+
+.navitems{
+    color: rgba(128, 128, 128, 0.459);
+    font-size: 30px;
+   
+}
+
+
+
+h5{
+    padding-bottom: 20px;
+    font-size: 20px;
+
+}
+
+.catright{
+padding-top: 40px;
 }

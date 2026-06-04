@@ -1,0 +1,126 @@
+
+.blogpart1{
+    
+    text-align: center;
+    padding-top: 30px;
+}
+
+.btns1{
+    display: flex;
+    gap: 15px;
+}
+
+.blogbtn1a{
+    background-color: black;
+    color: white;
+   padding-left: 14px;
+   padding-right: 14px;
+   padding-top: 7px;
+   padding-bottom: 7px;
+   border-radius: 20px;
+   border: none;
+   margin-right: 15px;
+}
+
+
+.blogbtn1b{
+    background-color: white;
+    color: rgba(0, 0, 0, 0.733);
+   padding-left: 14px;
+   padding-right: 14px;
+   padding-top: 7px;
+   padding-bottom: 7px;
+   border-radius: 20px;
+   border:1px solid rgba(128, 128, 128, 0.638);
+   margin-right: 15px;
+   font-size: 15px;
+   margin-bottom: 50px;
+   
+}
+
+.blogbtn1b:hover{
+    background-color: rgba(128, 128, 128, 0.366);
+    color: black;
+    border:1px solid rgba(0, 0, 0, 0.615);
+
+}
+
+.allset{
+    margin-bottom: 40px;
+}
+
+.blogpart2{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.blogimga{
+    width: 27rem;
+    height: 22rem;
+    border-radius: 10px;
+}
+
+.calendar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.blogcomment{
+    display: flex;
+     flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+
+}
+
+.dates{
+    display: flex;
+    margin-top: 30px;
+}
+
+.blogtexts{
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+}
+
+.blogtextsh4{
+    font-size: 150%;
+    color: rgba(0, 0, 0, 0.895);
+}
+
+.blogtextsh4:hover{
+    color: orange;
+}
+
+p{
+    font-size: 17px;
+}
+
+.blogtextbtn{
+    width: 7rem;
+    height: 40px;
+    border-radius: 20px;
+    background-color: white;
+    border:1px solid rgba(128, 128, 128, 0.588);
+    margin-bottom: 40px;
+}
+
+
+.blogtext2{
+    display: flex;
+    margin-left: 4.7rem;
+    gap: 50px;
+}
+
+.blogpart2b{
+    display: flex;
+    margin-left: 4.7rem;
+    gap: 30px;
+}
+
+

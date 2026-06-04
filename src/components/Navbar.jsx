@@ -215,11 +215,11 @@ function Navbar() {
 
 
 
-                    <a href="" className="special">
+                    <a href="/blog" className="special">
                         Blog
                     </a>
 
-                    <a href="" className="special">
+                    <a href="/contact" className="special">
                         Contact
                     </a>
 

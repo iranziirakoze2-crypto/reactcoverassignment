@@ -1,4 +1,4 @@
-import cat1img from '../Images/cat1img.webp';
+import cat1img from '../assets/Images/cat1img.webp';
 import { PiHouseFill, PiHouseLight } from "react-icons/pi";
 import anagrey from '../assets/anagrey.webp';
 import axis2a from '../assets/axis2a.webp';

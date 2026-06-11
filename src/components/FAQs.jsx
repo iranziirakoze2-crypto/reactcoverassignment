@@ -15,13 +15,13 @@ function FAQs() {
        <div className='faqslayouts'>
 
         <div>
-        <p className='faqsp'>What is your return policy?<span className='faqs+'>+</span></p>
-        <p className='faqsp'>How do I track my order?<span className='faqs+'>+</span></p>
-        <p className='faqsp'>What payment methods do you accept?<span className='faqs+'>+</span></p>
-        <p className='faqsp'>What payment methods do you accept?<span className='faqs+'>+</span></p>
-        <p className='faqsp'>How can I contact your customer support?<span className='faqs+'>+</span></p>
-        <p className='faqsp'>Are the sizes true to measurements?<span className='faqs+'>+</span></p>
-        <p className='faqsp'>Can I modify or cancel my order after it's been placed?<span className='faqs+'>+</span></p>
+        <p className='faqsp'>What is your return policy?<span className='faqs'>+</span></p>
+        <p className='faqsp'>How do I track my order?<span className='faqs'>+</span></p>
+        <p className='faqsp'>What payment methods do you accept?<span className='faqs'>+</span></p>
+        <p className='faqsp'>What payment methods do you accept?<span className='faqs'>+</span></p>
+        <p className='faqsp'>How can I contact your customer support?<span className='faqs'>+</span></p>
+        <p className='faqsp'>Are the sizes true to measurements?<span className='faqs'>+</span></p>
+        <p className='faqsp'>Can I modify or cancel my order after it's been placed?<span className='faqs'>+</span></p>
       </div>
 
       <div>

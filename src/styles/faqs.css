@@ -24,6 +24,9 @@
     padding-left: 20px;
 }
 
-.faqs+{
-margin-left: 10rem;
+.faqsp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
 }

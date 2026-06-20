@@ -1,395 +1,251 @@
-nav{
-        position: sticky;
-    top: 0;
-    background-color:white;
-     z-index: 100;
-}
-.navcontainer{
-    display: flex;
-    justify-content: space-between;
-    padding: 1.5rem;
-      position: sticky;
-    top: 0;
-    background-color:white;
-}
-
-.min {
- 
-  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
-  font-weight: 500;          /* Normal weight */
-  font-size: 35px;           /* Adjust size as needed */
-  text-transform: lowercase; /* Forces lowercase like the image */
-  letter-spacing: 0.05em;    /* Adds subtle spacing between letters */
-  color: #000000;            /* Crisp black text */
-
-}
-
-
-a{
-   text-decoration: none;
-    color: black;
-    text-transform:capitalize;
-}
-.navlist {
-    gap: 20px;
-    display: flex;
-    gap: 20px;
-    font-weight: 500;
-    font-size: 17px;
-    align-items: center;
-
-    
-}
-
-.special:hover{
-    color: orange;
-}
-
-
-.navicons{
-    display: flex;
-    flex-direction: row;
-    gap: 13px;
-}
-
-.navicon{
-    height: 30px;
-    width: 24px;
-}
-/* =========================================================
-   NAVBAR CONTAINER
-========================================================= */
-
 nav {
+    position: sticky;
+    top: 0;
     width: 100%;
-   
-    background-color: white;
+    z-index: 100;
+    background: #ffffff;
+    border-bottom: 1px solid #eeeeee;
 }
 
 .navcontainer {
+    width: min(1440px, 100%);
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-
-    padding: 1.2rem 3rem;
+    justify-content: space-between;
+    gap: 28px;
+    padding: 22px clamp(18px, 4vw, 48px);
+    background: #ffffff;
 }
 
+.min {
+    color: #000000;
+    font-size: clamp(26px, 3vw, 38px);
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: lowercase;
+    white-space: nowrap;
+}
 
-
-
-
-/* =========================================================
-   NAV LINKS
-========================================================= */
+a {
+    color: #111111;
+    text-decoration: none;
+    text-transform: capitalize;
+}
 
 .navlist {
     display: flex;
     align-items: center;
-    gap: 2rem;
-
-    position: relative;
-}
-
-.navlist a {
-    text-decoration: none;
-    color: black;
+    justify-content: center;
+    gap: clamp(18px, 3vw, 34px);
     font-size: 1rem;
-    font-weight: 500;
-}
-
-/* aligns text + icon */
-
-.navlist a span {
-    margin-right: 0.3rem;
-}
-/* =========================================================
-   NAVBAR
-========================================================= */
-
-nav{
-    width: 100%;
-    background-color: white;
-   
-}
-
-.navcontainer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 1.3rem 3rem;
-}
-
-
-
-
-/* =========================================================
-   NAV LINKS
-========================================================= */
-
-.navlist{
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-}
-
-.navlist a{
-    text-decoration: none;
-    color: black;
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-.navlist span{
-    margin-right: .3rem;
-}
-/* =========================================================
-   HOME DROPDOWN PARENT
-========================================================= */
-
-.navlist > div > div{
-    position: relative;
-}
-
-/* =========================================================
-   TOP NAV ITEM
-========================================================= */
-
-.navlist > div > div > a{
-    display: flex;
-    align-items: center;
-}
-
-/* =========================================================
-   BUTTON WRAPPER
-========================================================= */
-
-.bt{
-    position: relative;
-}
-
-/* =========================================================
-   DROPDOWN CARD
-========================================================= */
-
-.dropdown-card{
-
-    position: absolute;
-
-    top: 100%;
-    left: 0;
-
-    width: 210px;
-
-    margin-top: 0;
-
-    background-color: white;
-
-    border-radius: 15px;
-
-    overflow: hidden;
-    
-
-  
-   padding-top: 50px;
-   padding-bottom: 30px;
-   padding-left: 10px;
-
-    z-index: 100;
-}
-
-/* =========================================================
-   DROPDOWN LINKS
-========================================================= */
-
-.Sub-Nav1{
-
-    display: block;
-
-    padding: 5px;
-
-    text-decoration: none;
-
-    color: black;
-
-    transition: 0.3s;
-
-    cursor: pointer;
-   
-
-   
-}
-
-/* =========================================================
-   REMOVE LAST BORDER
-========================================================= */
-
-.Sub-Nav1:last-child{
-    border-bottom: none;
-}
-
-/* =========================================================
-   HOVER
-========================================================= */
-
-.Sub-Nav1:hover{
-   
-    color: orange;
-   
-}
-
-/* =========================================================
-   SPECIAL LINKS
-========================================================= */
-
-.special{
     font-weight: 600;
 }
 
-/* =========================================================
-   ICONS
-========================================================= */
+.navlist a,
+.navlist > div > div > a {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    transition: color 0.2s ease;
+}
 
-.navicons{
+.special:hover,
+.navlist a:hover,
+.Sub-Nav1:hover,
+.Sub-Nav2:hover {
+    color: #ff8a00;
+}
+
+.bt {
+    position: relative;
+}
+
+.bt::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: -18px;
+    width: calc(100% + 36px);
+    height: 24px;
+}
+
+.navicons {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 18px;
 }
 
-.navicon{
-    font-size: 1.5rem;
+.navicon {
+    width: 24px;
+    height: 24px;
     cursor: pointer;
-    transition: .3s;
+    transition: color 0.2s ease, transform 0.2s ease;
 }
 
-.navicon:hover{
-    transform: scale(1.1);
+.navicon:hover {
+    color: #ff8a00;
+    transform: translateY(-1px);
 }
 
-/* =========================================================
-   OVERLAY
-========================================================= */
-
-.overlay{
-
+.overlay {
     position: fixed;
-
-    top: 80px;
-
-    left: 0;
-
-    width: 100%;
-
-    height: calc(100vh - 80px);
-
-    background-color: rgba(0,0,0,0.4);
-
+    inset: 76px 0 0;
+    background: rgba(0, 0, 0, 0.18);
     z-index: 50;
-
     pointer-events: none;
 }
 
-
-.sub-dropdown1{
-
-  display: flex;
-  flex-direction: row;
+.dropdown-card {
     position: absolute;
-
-    gap: 50px;
-  
-    top: 100%;
+    top: calc(100% + 16px);
     left: 0;
-
-    width: 100rem;
-    height: 30rem;
-
-    margin-top: 2px;
-
-    background-color: white;
-
-    border-radius: 15px;
-
-    overflow: hidden;
-    
-
-  
-   padding-top: 50px;
-   padding-bottom: 30px;
-   padding-left: 10px;
-
+    min-width: 250px;
+    padding: 18px;
     z-index: 100;
-    transform: translateX(-650px);
-}
-.sub-dropdown-content1{
-    margin-top: 30px;
-    padding-left: 5px;
-     transform: translateY(-30px)
-}
-.subzgans{
-    display: flex;
-}
-.dropdown-cardcat{
-    display: flex;
-    position: absolute;
-
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.08);
 }
 
-.navcatimg{
-width: 280px;
-height: 230px;
-border-radius: 15px;
-}
-.Contents{
-    display: flex;
-    flex-direction: column;
-}
-
-.Sub-Nav2{
-   
-
-    display: flex;
-    flex-direction: row;
+.Sub-Nav1 {
     display: block;
-
-  padding: 10px;
-
-    text-decoration: none;
-
-    color: black;
-
-    transition: 0.3s;
-
-    cursor: pointer;
-
-
-   
-
-   
+    padding: 11px 8px;
+    color: #111111;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
 }
 
-.navitemsbar{
-    padding-left: 25px;
-    padding-bottom: 20px;
-    border-bottom:1px solid black;
-   
-
+.Sub-Nav1:hover {
+    background: #fff7ef;
 }
 
-.navitems{
-    color: rgba(128, 128, 128, 0.459);
-    font-size: 30px;
-   
+.sub-dropdown1 {
+    position: absolute;
+    top: calc(100% + 16px);
+    left: 50%;
+    width: min(980px, calc(100vw - 36px));
+    min-height: 330px;
+    display: grid;
+    grid-template-columns: 220px 120px 1fr;
+    gap: 28px;
+    padding: 28px;
+    z-index: 100;
+    transform: translateX(-48%);
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.08);
 }
 
-
-
-h5{
-    padding-bottom: 20px;
-    font-size: 20px;
-
+.navitemsbar {
+    padding-right: 24px;
+    border-right: 1px solid #eeeeee;
 }
 
-.catright{
-padding-top: 40px;
+.navitemsbar h5,
+.sub-dropdown-content1 {
+    margin: 0 0 18px;
+    color: #8c8c8c;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+
+.navitems {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #111111;
+    font-size: 1.35rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.catright {
+    min-width: 0;
+}
+
+.dropdown-cardcat {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.Sub-Nav2 {
+    display: grid;
+    grid-template-columns: 86px 1fr;
+    gap: 12px;
+    align-items: center;
+    color: #111111;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.Sub-Nav2:hover {
+    background: #fff7ef;
+}
+
+.view-products-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    height: fit-content;
+    color: #111111;
+    font-weight: 800;
+}
+
+.navcatimg {
+    width: 86px;
+    height: 86px;
+    object-fit: cover;
+    border-radius: 8px;
+    background: #f7f7f7;
+}
+
+.contents {
+    display: grid;
+    gap: 7px;
+    font-size: 0.92rem;
+}
+
+@media (max-width: 900px) {
+    .navcontainer {
+        flex-wrap: wrap;
+    }
+
+    .navlist {
+        order: 3;
+        width: 100%;
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: 4px;
+    }
+
+    .sub-dropdown1 {
+        left: 0;
+        transform: none;
+        grid-template-columns: 1fr;
+    }
+
+    .navitemsbar {
+        padding-right: 0;
+        border-right: 0;
+    }
+}
+
+@media (max-width: 560px) {
+    .navcontainer {
+        padding: 16px;
+    }
+
+    .navlist {
+        gap: 16px;
+        font-size: 0.92rem;
+    }
+
+    .dropdown-cardcat {
+        grid-template-columns: 1fr;
+    }
 }

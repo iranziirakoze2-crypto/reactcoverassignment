@@ -1,60 +1,87 @@
-
-.divcat1{
-     transform: translateY(-240px);
-     padding-left: 75px;
+.cat1img {
+    width: min(1440px, calc(100% - 48px));
+    height: clamp(260px, 34vw, 460px);
+    display: block;
+    margin: 38px auto 0;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
-.cat1img{
-    height: 23rem;
-    width: 95%;
-    margin-left: 50px;
-    margin-right: 50px;
-    border-radius: 15px;
+.divcat1 {
+    width: min(1440px, calc(100% - 48px));
+    margin: -130px auto 80px;
+    position: relative;
+    color: #ffffff;
 }
-.divcat2{
-     display: flex;
+
+.h2cat1 {
+    margin: 0 0 16px;
+    font-size: clamp(2.4rem, 5vw, 5rem);
+    font-weight: 800;
+    line-height: 1;
+}
+
+.divcat2 {
+    display: inline-flex;
     align-items: center;
-    gap: 20px;
-   
-    
+    gap: 12px;
+    padding: 12px 16px;
+    border-radius: 999px;
+    background: #ffffff;
+    color: #111111;
 }
 
-.h2cat1{
-    font-size: 30px;
-
-}
-.pcat1{
-    color: black;
-    font-size: 17px;
+.pcat1 {
+    color: #111111;
+    font-size: 0.95rem;
+    font-weight: 700;
 }
 
-.cat1icon{
-   
-    font-size: 30px;
-    color: black;
-    
+.cat1icon {
+    display: inline-flex;
+    color: #111111;
+    font-size: 24px;
 }
 
-.cat1icon:hover {
-  color: orange;
+.catalogcards {
+    width: min(1440px, calc(100% - 48px));
+    margin: 0 auto;
 }
 
-.catalogcontainer{
-    display: flex;
- flex-direction: row;
-justify-content: right;
-gap: 25px;
-
+.catalogcontainer {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+    margin-bottom: 42px;
 }
 
-.catalogcard{
-    margin-bottom: 70px;
+.catalogcard {
+    margin: 0;
 }
 
-.catalogimage{
-    width: 300px;
-    height: 300px;
-    border-radius: 12px;
-   
-    
+.catalogimage {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    background: #f7f3ef;
+}
+
+@media (max-width: 860px) {
+    .catalogcontainer {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 560px) {
+    .cat1img,
+    .divcat1,
+    .catalogcards {
+        width: min(100% - 28px, 1440px);
+    }
+
+    .catalogcontainer {
+        grid-template-columns: 1fr;
+    }
 }

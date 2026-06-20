@@ -1,131 +1,154 @@
-.contact1{
-  padding-left: 45px;
+.contact1,
+.map,
+.contactcontents {
+    width: min(1280px, calc(100% - 48px));
+    margin-left: auto;
+    margin-right: auto;
 }
 
-h3{
-    font-size: 350%;
-    margin-bottom: 0;
+.contact1 {
+    padding: 58px 0 34px;
 }
 
-.paragraph1{
-    font-size: 22px;
-    padding-bottom: 70px;
+h3 {
+    margin: 0;
+    color: #111111;
+    font-size: clamp(2.4rem, 6vw, 5.5rem);
+    font-weight: 800;
+    line-height: 1;
 }
 
-.map{
-    width: 95%;
-    padding-left: 45px;
+.paragraph1 {
+    margin: 18px 0 0;
+    color: #666666;
+    font-size: clamp(1rem, 2vw, 1.35rem);
 }
 
-.contactcontents{
-    display: flex;
-    flex-direction: row;
+.map {
+    height: clamp(280px, 38vw, 520px);
+    display: block;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
-.contactcontents1{
-    padding-left: 45px;
-    padding-top: 90px;
-    padding-right: 6rem;
-    
+.contactcontents {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 330px;
+    gap: clamp(32px, 6vw, 90px);
+    padding-top: 64px;
 }
 
-.contactinputaddresses{
-  height: 55px;
-  width: 25.6rem;
-  background-color: rgba(128, 128, 128, 0.567);
-  border: none;
-  border-radius: 8px;
-  padding-left: 15px;
+.contactcontents1 {
+    padding: 0;
 }
 
-.input1{
-    display: flex;
-    gap: 20px;
-    padding-bottom: 20px;
-
+.inputs {
+    display: grid;
+    gap: 18px;
 }
 
-.input2{
-    display: flex;
-    gap: 20px;
-     padding-bottom: 20px;
+.input1,
+.input2 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    padding: 0;
 }
 
-.input3{
-    width: 53.5rem;
-    max-height: 150px;
-    background-color: rgba(128, 128, 128, 0.567);
-     border: none;
-     border-radius: 8px;
-     padding-left: 15px;
-     padding-bottom: 130px;
-     padding-top: 20px;
+.contactinputaddresses,
+.input3 {
+    width: 100%;
+    border: 1px solid #e5e0dc;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #111111;
+    outline: 0;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.paragraph2{
-    font-size: 14.8px;
-    color: black;
+.contactinputaddresses {
+    min-height: 56px;
+    padding: 0 16px;
 }
 
-.addresses{
-    padding-top: 63px;
+.input3 {
+    min-height: 170px;
+    margin-top: 18px;
+    padding: 18px 16px;
 }
 
-.messagebtn{
-    width: 13rem;
-    height: 65px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    border-radius: 30px;
-    border: none;
-    color: white;
-    font-size: 16px;
-    background-color: orange;
+.contactinputaddresses:focus,
+.input3:focus {
+    border-color: #c7772d;
+    box-shadow: 0 0 0 4px rgba(199, 119, 45, 0.12);
 }
 
-.messagebtn:hover{
-    background-color: black;
-    color: white;
-}
- 
-h6{
-    margin-bottom: 0;
-    color: rgba(128, 128, 128, 0.792);
+.paragraph2 {
+    margin: 0 0 28px;
+    color: #777777;
+    font-size: 0.9rem;
+    line-height: 1.6;
 }
 
-.paragraph3{
-    font-size: 18px;
-    color: black;
+.addresses {
+    padding-top: 0;
 }
 
-.footericon{
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    margin-top: 35px;
-}
-
-
-.footericons{
-   
-    width: 34px;
-    height: 34px;
-
-    border-radius: 50%; /* circle */
-    border-color: #ff8800;
-    background-color: black;
-    color: white;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 22px;
-
+.messagebtn {
+    min-width: 180px;
+    min-height: 56px;
+    margin: 24px 0 14px;
+    border: 1px solid #c7772d;
+    border-radius: 999px;
+    background: #c7772d;
+    color: #ffffff;
     cursor: pointer;
+    font-size: 1rem;
+    font-weight: 800;
+}
 
-    border: 2px solid #9a9793;
+.messagebtn:hover {
+    border-color: #111111;
+    background: #111111;
+}
 
-    transition: 0.3s ease;
+h6 {
+    margin: 0 0 8px;
+    color: #8b8b8b;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
 
+.paragraph3 {
+    margin: 0 0 28px;
+    color: #111111;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.addresses .footericons {
+    border-color: #dddddd;
+    color: #111111;
+}
+
+.addresses .footericons:hover {
+    color: #ffffff;
+}
+
+@media (max-width: 860px) {
+    .contactcontents,
+    .input1,
+    .input2 {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 560px) {
+    .contact1,
+    .map,
+    .contactcontents {
+        width: min(100% - 28px, 1280px);
+    }
 }

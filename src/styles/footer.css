@@ -1,116 +1,127 @@
-.footer{
-    background-color: black;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    margin-top: 6rem;
+.footer {
+    margin-top: 96px;
+    padding: 0 clamp(18px, 4vw, 48px);
+    background: #111111;
+    color: #ffffff;
 }
-.footer1{
-    display: flex;
-    flex-direction: row;
+
+.footer1 {
+    width: min(1440px, 100%);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.25fr 0.7fr 0.8fr 1fr;
+    gap: clamp(28px, 4vw, 64px);
+    padding: 78px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.footerh3 {
+    margin: 0 0 24px;
+    color: #ffffff;
+    font-size: clamp(1.35rem, 2.4vw, 2.5rem);
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.footer1p {
+    margin: 0 0 12px;
+    color: rgba(255, 255, 255, 0.74);
+    font-size: 1rem;
+    line-height: 1.65;
+}
+
+.emailbtn {
+    width: min(100%, 330px);
+    min-height: 58px;
+    display: inline-flex;
+    align-items: center;
     justify-content: space-between;
-    padding-bottom: 9rem;
-     border-bottom: 1px solid white;
-}
-.footerh3{
-    color: white;
-    padding-bottom: 45px;
-    padding-top: 100px;
-    font-size: 40px;
-}
-
-.footerdiv{
-    margin-left: 30px;
-}
-.footer1p{
-    color: white;
-    font-size: 18px;
-
+    gap: 18px;
+    padding: 0 8px 0 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.78);
+    cursor: pointer;
 }
 
-.emailbtn{
-    height: 60px;
-    width: 300px;
-    color: white;
-    background-color: rgba(128, 128, 128, 0.193);
-    border: none;
-    border-radius: 10px;
-    font-size: 17px;
+.arrow {
+    width: 44px;
+    height: 44px;
+    display: inline-grid;
+    place-items: center;
+    border-radius: 50%;
+    background: #c7772d;
+    color: #ffffff;
 }
 
-.arrow{
-    background-color: orange;
-    border-radius: 50px;
-     padding: 15px;
-    margin-left: 85px;
-
-}
-
-.footericon{
+.footericon {
     display: flex;
     flex-direction: row;
-    gap: 15px;
-    margin-top: 35px;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 28px;
 }
 
-.footericons{
-   
-    width: 34px;
-    height: 34px;
+.footericons {
+    width: 38px;
+    height: 38px;
+    display: grid;
+    place-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    border-radius: 50%;
+    background: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
 
-    border-radius: 50%; /* circle */
-    border-color: #ff8800;
-    background-color: black;
-    color: white;
+.footericons:hover {
+    border-color: #c7772d;
+    background: #c7772d;
+}
 
+.footer2 {
+    width: min(1440px, 100%);
+    margin: 0 auto;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    flex-wrap: wrap;
+    padding: 26px 0;
+}
+
+.footer2p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+}
+
+.englishbtn,
+.rwandabtn {
+    min-height: 46px;
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
-
-    font-size: 22px;
-
-    cursor: pointer;
-
-    border: 2px solid #9a9793;
-
-    transition: 0.3s ease;
-
+    gap: 8px;
+    padding: 0 18px;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 999px;
+    background: transparent;
+    color: #ffffff;
 }
 
-.footer2{
-    display: flex;
-    flex-direction: row;
-   
-    padding-bottom: 70px;
-    padding-top: 30px;
+@media (max-width: 900px) {
+    .footer1 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
-.footer2p{
-    padding-right: 10rem;
-    font-size: 16px;
-    color: white;
-}
-
-.englishbtn{
-    height: 50px;
-    width: 170px;
-    border-radius: 30px;
-    border:0.1px solid rgba(255, 255, 255, 0.503);
-    background-color: black;
-    color: white;
-    margin-right: 20px;
-   
-}
-
-.englishperson{
-    padding-right: 12px;
-}
-
-.rwandabtn{
- height: 50px;
-    width: 270px;
-    border-radius: 30px;
-    border:0.1px solid rgba(255, 255, 255, 0.503);
-    background-color: black;
-    color: white;
-   
+@media (max-width: 560px) {
+    .footer1 {
+        grid-template-columns: 1fr;
+        padding: 56px 0;
+    }
 }
